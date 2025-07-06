@@ -1,231 +1,198 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ankan Hore_Resume</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankan Hore | Product & Analytics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-light: #f9fafb;
+      --bg-dark: #111827;
+      --text-light: #1f2937;
+      --text-dark: #f3f4f6;
+      --accent: #3b82f6;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    .container {
+      max-width: 720px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: "\2022";
+      color: var(--accent);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .dark-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: 2px solid var(--accent);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .resume-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    .nav-title {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    .menu-toggle {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .nav-links {
+      display: none;
+    }
+    .nav-links.open {
+      display: block;
+      margin-top: 1rem;
+    }
+    @media (min-width: 640px) {
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-title">Ankan Hore</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#contact">Contact</a>
+      <a href="#skills">Skills</a>
+      <a href="#beyond">Beyond Work</a>
+    </div>
+  </nav>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Short Bio</a></li>
-							<li><a href="#one">Work Experience</a></li>
-							<li><a href="#two">Academics and Publications</a></li>
-							<li><a href="#three">Projects and Achievements</a></li>
-							<li><a href="#four">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <div class="container">
+    <h1>Ankan Hore</h1>
+    <h2>Product & Analytics | Nike, Dunzo | 6.5+ years of impact-driven work</h2>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Short Bio</h1>
-							<p>Ankan Hore is an experienced professional in the field of Data Analytics, having experience in both startups and MNCs. While 
-								he learned various business processes and worked with multiple Analytical tools, he also incorporates the experience of handling customers and clients
-								across different geographies. Mostly self-motivated, he's collaborative and works with cross-functional teams to achieve the target within required deadlines.
-							</p>
+    <section>
+      <p>
+        I’m a Product & Analytics professional passionate about solving high-impact problems
+        using data, collaboration, and a product-first mindset. Over the past 6.5 years, I’ve led cross-functional initiatives
+        at <strong>Nike</strong> and <strong>Dunzo</strong>, helping turn complex business challenges into actionable, measurable outcomes.
+      </p>
+      <a class="resume-btn" href="Resume_Ankan_Hore.pdf" download>📄 Download Resume</a>
+    </section>
 
-							<p>Ankan completed his undergraduate studies from the <i>Institute of Engineering and Management</i>
-							   Kolkata in 2018 with a major in <i>Information Technology</i>. Presently, he is employed at <i>Dunzo Digital Private Limited</i> as a Data Analyst. Prior to that, he was employed at <i>Tata Consultancy Services</i> as a Sharepoint Administrator/ Analyst.</p> 
+    <section>
+      <div class="section-title">💼 Key Highlights</div>
+      <ul>
+        <li>Cut vendor engagement by 15% at Nike by improving recommendations</li>
+        <li>Reduced support incidents by 10% with improved process documentation</li>
+        <li>Streamlined cloud pipelines to reduce storage costs</li>
+        <li>Reduced store shutdowns by 60% at Dunzo using marketplace analytics</li>
+        <li>Awarded Top Performer thrice in 2024 (Rising Star, Distinguished, SPOT)</li>
+      </ul>
+    </section>
 
-							<p> His hobbies include writing blogs and cooking delicacies in leisure.</p>			
-							   
-						    <a href="https://drive.google.com/file/d/1VRgcPNjlNKoFHQFj7GSZFeHxXWROp_GG/view">Resume</a>
-							&nbsp;&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=heM4BHMaydMC&hl=en">Google Scholar</a>
-							&nbsp;&nbsp;&nbsp; <a href="https://github.com/Ankan-238">GitHub</a>&nbsp;&nbsp;&nbsp; <a href="https://www.kaggle.com/ankanhore545">Kaggle(3X Expert)</a>
+    <section id="skills">
+      <div class="section-title">🧠 Skills & Tools</div>
+      <ul>
+        <li>Product Strategy | Data-Driven Decision Making | Agile Collaboration</li>
+        <li>SQL (Databricks, BigQuery), Python, Jira, API, Excel, Confluence</li>
+      </ul>
+    </section>
 
-						</div>
-					</section>
+    <section>
+      <div class="section-title">🎓 Education</div>
+      <p>B.Tech in Information Technology — MAKAUT, WB (2018)</p>
+    </section>
 
-				<!-- One -->
+    <section id="contact">
+      <div class="section-title">📬 Get in Touch</div>
+      <p>Email: <a href="mailto:ankanhore238@gmail.com">ankanhore238@gmail.com</a></p>
+      <p>Phone: <a href="tel:+918017482876">+91-8017482876</a></p>
+      <p>GitHub: <a href="https://github.com/ankan-238" target="_blank">ankan-238</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ankan-hore/" target="_blank">ankan-hore</a></p>
+    </section>
 
-				<section id="one" class="wrapper style2 spotlights">
-					<section>
-						<a class="image"><img src="images/office.jpg" alt="" data-position="bottom center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h3>Data Analyst, Dunzo</h3>
-								    2022- Present   
-								<ul> 
-									<li> Attained 80% overall availability of 4 major stores by data wrangling using MS - Excel and Tableau.</li>
-									<li> Reduced total store shut sessions by identifying shortcomings and discussing them with store ops and supply teams; dropped by 84% using daily RCA.</li>
-									<li> Diminished wastage ( as % of GMV) by 30% by analysing the heavily unsold skus in perishables and non-perishables categories using Python and Tableau.</li>
-								</ul>
-								<h3>Analyst, Tata Consultancy Services</h3>
-								    2018- 2022   
-								<ul> 
-									<li> Analysed website usage metrics using Python and SQL and improved resource management by 15 hours/week.</li>
-									<li> Performed storage estimation analysis using Python and resolved space limits, thereby onboarding 1000 more clients/country.</li>
-									<li> Mentored 20 associates in my SharePoint and Analytics team to resolve 2500+ incidents, increasing the annual revenue by 8%.</li>
-								</ul>          
-							</div>
-						</div>
-					</section>
-					<section>
-						<a class="image"><img src="images/keyboard.jpg" alt="" data-position="center center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>Technical Skills:</h2>
-							 <ul> 
-							    <li> Programming skills: Python, C</li>
-								<li> Database Systems: MySQL, MS SQL, Oracle, MS Excel</li>
-							 </ul> 
-								
-							</div>
-						</div>
-					</section>
-				</section>
-				<!-- Two -->
+    <section id="beyond">
+      <div class="section-title">✨ Beyond Work</div>
+      <p>
+        Into fitness, early morning workouts, sustainable travel, and meaningful side quests.
+        Ask me about my solo travel stories or the 17.7 kg of waste we collected during the Konugulu Betta cleanup! 🌱
+      </p>
+    </section>
 
+    <footer>
+      © 2025 Ankan Hore · Made with data & coffee ☕
+    </footer>
+  </div>
 
-				<section id="two" class="wrapper style2 spotlights">
-					<section>
-						<a class="image"><img src="images/blackboard.jpg" alt="" data-position="center center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h3>Bachelors of Technology in Information Technology </h3>                     2014-2018
-								<ul>
-									<li>Overall CGPA: 8.74/10</li>
-									<li>Institute of Engineering & Management, Kolkata</li>
-									<li><i>University: Maulana Abul Kalam Azad University of Technology (erstwhile known as West Bengal University of Technology)</i></li>
-								</ul>
-						</div>
-					</section>
-					<section>
-						<a  class="image"><img src="images/conference.jpg" alt="" data-position="top center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h3>Publications</h3>
-								<p><a href="https://ieeexplore.ieee.org/abstract/document/7746316/"><i>"A comparative study of Travelling Salesman Problem 
-									and solution Using different Algorithm Design Techniques"</i></a>, Tapan Kumar Hazra, Ankan Hore, 2016 IEEE 7th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON).</p>
-							</div>
-						</div>
-					</section>
-				</section>
-				
-				<!-- Three -->
-
-				<section id="three" class="wrapper style2 spotlights">
-					<section>
-						<a class="image"><img src="images/face.jpg" alt="" data-position="center center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h3>Patient Survival Detection (Classification)</h3>                     Jan'22- Feb'22
-								<ul>
-									<li>Performed upsampling, feature selection and improvised F1-score by 8%.</li>
-									<li>Tuned hyperparameters of Random Forest & SVM models to achieve 93% accuracy.</li>
-								</ul>
-								<h3>Wild Blueberry Prediction (Regression)</h3>     Dec'21- Jan'22
-								<ul>
-									<li>Optimised the baseline Random Forest model using Hyperparameter Tuning by 1.2%.</li>
-									<li>Analysed the 2 most dominating features of the model using SHAP library.</li>
-								</ul>
-						</div>
-					</section>
-					<section>
-						<a  class="image"><img src="images/happyface.jpg" alt="" data-position=" top center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>Achievements</h2>
-								<ul> 
-									<li> Ranked 5<sup>th</sup> (out of 35) in the Grand Finale of Smart India Hackathon(2017). </li>
-									<li> Awarded the Deloitte Innovation Award at Smart India Hackathon(2017).</li>
-									<li> Selected to attend the prestigious Summer School hosted by Department of CSA, IISc, Bangalore
-										among top 70 students nationally(2018).</li>
-								</ul>   
-							</div>
-						</div>
-					</section>
-				</section>
-
-				
-			<!--Four -->
-			<section id="four" class="wrapper style1 fade-up">
-				<div class="inner">
-					<h2>Contact Information</h2>
-					
-					<div class="split style1">
-						<section>
-							<form method="post" action="mailto: ankanhore238@gmail.com" enctype="text/plain">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="5"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><a href="mailto: ankanhore238@gmail.com" class="button submit">Send Message</a></li>
-								</ul>
-							</form>
-						</section>
-						<section>
-							<ul class="contact">
-								<li>
-									<h3>Email</h3>
-									<a href="mailto:ankanhore238@gmail.com">ankanhore238@gmail.com</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<span>(+91) 8017-482-876</span>
-								</li>
-								<li>
-									<h3>Social</h3>
-									<ul class="icons">
-										<li><a href="https://twitter.com/This_is_Ankan" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://github.com/Ankan-238" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="https://linkedin.com/in/ankan-hore/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</section>
-					</div>
-				</div>
-			</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						<li>Image Source: <a href="https://www.pexels.com/">Pexels</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
 </html>
