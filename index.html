@@ -66,15 +66,13 @@
       text-decoration: underline;
     }
     .dark-toggle {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
       background: none;
       border: 2px solid var(--accent);
       padding: 0.5rem 1rem;
       border-radius: 8px;
       cursor: pointer;
       font-weight: 600;
+      margin-left: 1rem;
     }
     .resume-btn {
       display: inline-block;
@@ -91,6 +89,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 1rem;
+      flex-wrap: wrap;
     }
     .nav-title {
       font-weight: 700;
@@ -102,10 +101,14 @@
     }
     .nav-links {
       display: none;
+      align-items: center;
     }
     .nav-links.open {
       display: block;
       margin-top: 1rem;
+    }
+    .nav-links a {
+      margin-right: 1rem;
     }
     @media (min-width: 640px) {
       .nav-links {
@@ -117,16 +120,15 @@
 </head>
 <body>
   <nav>
-    <div class="nav-title">Ankan Hore</div>
+    <div class="nav-title">Resume</div>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <div class="nav-links" id="navLinks">
-      <a href="#contact">Contact</a>
       <a href="#skills">Skills</a>
       <a href="#beyond">Beyond Work</a>
+      <a href="#contact">Contact</a>
+      <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
     </div>
   </nav>
-
-  <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
 
   <div class="container">
     <h1>Ankan Hore</h1>
