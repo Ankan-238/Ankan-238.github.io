@@ -132,7 +132,7 @@
 
   <div class="container">
     <h1>Ankan Hore</h1>
-    <h2>Product & Analytics | Nike, Dunzo | 6.5+ years of impact-driven work</h2>
+    <h2>Product & Analytics | Nike, Dunzo, TCS | 6.5+ years of impact-driven work</h2>
 
     <section>
       <p>
@@ -140,25 +140,25 @@
         using data, collaboration, and a product-first mindset. Over the past 6.5 years, I’ve led cross-functional initiatives
         at <strong>Nike</strong> and <strong>Dunzo</strong>, helping turn complex business challenges into actionable, measurable outcomes.
       </p>
-      <a class="resume-btn" href="Resume_Ankan_Hore.pdf" download>📄 Download Resume</a>
+      <a class="resume-btn" href="./Resume_Ankan_Hore.pdf" target="_blank">📄 Download Resume</a>
     </section>
 
     <section>
       <div class="section-title">💼 Key Highlights</div>
       <ul>
-        <li>Cut vendor engagement by 15% at Nike by improving recommendations</li>
-        <li>Reduced support incidents by 10% with improved process documentation</li>
+        <li>Cut vendor engagement by <strong>15%</strong> at Nike by improving recommendations</li>
+        <li>Reduced support incidents by <strong>10%</strong> with improved process documentation</li>
         <li>Streamlined cloud pipelines to reduce storage costs</li>
-        <li>Reduced store shutdowns by 60% at Dunzo using marketplace analytics</li>
-        <li>Awarded Top Performer thrice in 2024 (Rising Star, Distinguished, SPOT)</li>
+        <li>Reduced store shutdowns by <strong>60%</strong> at Dunzo using marketplace analytics</li>
+        <li>Awarded Top Performer <strong>thrice</strong> in <strong>2024</strong> (Rising Star, Distinguished, SPOT)</li>
       </ul>
     </section>
 
     <section id="skills">
       <div class="section-title">🧠 Skills & Tools</div>
       <ul>
-        <li>Product Strategy | Data-Driven Decision Making | Agile Collaboration</li>
-        <li>SQL (Databricks, BigQuery), Python, Jira, API, Excel, Confluence</li>
+        <li>Product Strategy | Business Analytics| Data-Driven Decision Making | Cross-Functional Collaboration| Problem Solving | Agile</li>
+        <li>SQL (Databricks, BigQuery), Excel, Python, Tableau, API, Jira, Confluence</li>
       </ul>
     </section>
 
@@ -167,9 +167,7 @@
       <p>B.Tech in Information Technology — MAKAUT, WB (2018)</p>
     </section>
 
-    <section id="contact">
-      <div class="section-title">📬 Get in Touch</div>
-      <p>Email: <a href="mailto:ankanhore238@gmail.com">ankanhore238@gmail.com</a></p>
+     <button onclick="copyEmail()" style="margin-left:10px;padding:3px 8px;border:none;background:#3b82f6;color:white;border-radius:4px;cursor:pointer;">📋 Copy</button></p>
       <p>Phone: <a href="tel:+918017482876">+91-8017482876</a></p>
       <p>GitHub: <a href="https://github.com/ankan-238" target="_blank">ankan-238</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/ankan-hore/" target="_blank">ankan-hore</a></p>
@@ -179,7 +177,7 @@
       <div class="section-title">✨ Beyond Work</div>
       <p>
         Into fitness, early morning workouts, sustainable travel, and meaningful side quests.
-        Ask me about my solo travel stories or the 17.7 kg of waste we collected during the Konugulu Betta cleanup! 🌱
+        Ask me about my solo travel stories or the 17.7 kg of waste we collected during the recent trek cleanup! 🌱
       </p>
     </section>
 
@@ -196,5 +194,40 @@
       document.getElementById('navLinks').classList.toggle('open');
     }
   </script>
+<script>
+    document.querySelector('.resume-btn').addEventListener('click', function (e) {
+      fetch('./Resume_Ankan_Hore.pdf', { method: 'HEAD' })
+        .then(res => {
+          if (!res.ok) {
+            alert('Resume failed to load. Please contact me directly.');
+            e.preventDefault();
+          }
+        })
+        .catch(() => {
+          alert('Unable to load resume. Try again later or reach out directly.');
+          e.preventDefault();
+        });
+    });
+  function copyEmail() {
+  const email = "ankanhore238@gmail.com";
+  navigator.clipboard.writeText(email).then(() => {
+    alert("Email copied to clipboard!");
+  }).catch(() => {
+    alert("Failed to copy email. Try manually.");
+  });
+}
+
+let resumeClicks = parseInt(localStorage.getItem('resumeClicks')) || 0;
+        resumeClicks++;
+        localStorage.setItem('resumeClicks', resumeClicks);
+        console.log(`Resume clicked ${resumeClicks} time(s)`);
+      }
+    })
+    .catch(() => {
+      alert('Unable to load resume. Try again later or reach out directly.');
+      e.preventDefault();
+    });
+});
+</script>
 </body>
 </html>
